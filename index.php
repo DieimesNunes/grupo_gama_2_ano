@@ -15,7 +15,6 @@
     </head>
     <body>
         <header>
-
             <div>
                 <a href="index.html"><img id="Logo" src="fotos/logoPI4.png" alt="meia inteira"></a>
             </div>
@@ -23,9 +22,7 @@
                 <form action="">
                     <input type="text" placeholder="Qual tipo de tênis você gosta?">
                     <button>Procurarr</button>    
-                </form>
-           
-
+                </form> 
         </header>
 
         <nav>
