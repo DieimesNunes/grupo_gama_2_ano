@@ -22,7 +22,7 @@
             <div>
                 <form action="">
                     <input type="text" placeholder="Qual tipo de tênis você gosta?">
-                    <button>Procurar</button>    
+                    <button>Procurarr</button>    
                 </form>
            
 
