@@ -13,17 +13,12 @@
     if(isset($_POST["bt_nome"])){
         $nome = $_POST["bt_nome"];
         $email = $_POST["bt_email"];
-<<<<<<< HEAD
-        $produto = $_POST["bt_produto"];
-        $pedido = $_POST["bt_pedido"];
-=======
        // $produto = $_POST["bt_produto"];
         $produto = $produto_banco["produto"];
         $pedido = $_POST["bt_pedido"];
 
         $mysqli -> query("INSERT INTO pedido (nome, email, produto, pedido) values ('$nome', '$email', '$produto', '$pedido')") or die ($mysqli->error);
         $_SESSION['msg'] = "<div class='alert alert-success'>Mensagem enviado</div>";
->>>>>>> acerto
     }
 
    
@@ -49,14 +44,9 @@
                 <h1>Fale Conosco!</h1>
                 <div class="mb-3"> 
                     <label class="form-label" for="">Nome:</label>                   
-<<<<<<< HEAD
-                    <input type="text" class="form-control" placeholder="Digite o seu nome" name="bt_nome">
-                </div>                
-=======
                     <input type="text" class="form-control" placeholder="Digite o seu nome" name="bt_nome" required>
                 </div>
                 
->>>>>>> acerto
                 <div class="mb-3">
                     <label class="form-label" for="">Email:</label>                  
                     <input type="text" class="form-control" placeholder="Digite o seu email" name="bt_email" required>
