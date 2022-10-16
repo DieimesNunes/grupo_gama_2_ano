@@ -1,8 +1,18 @@
 <?php
     include("adm/conexao.php");
-    if(isset($_GET['id'])){
-        $id_produto = $_GET['id'];
-    }
+    if(!isset($_SESSION)){
+        session_start();
+    }  
+
+    $id= $_SESSION['id'];
+    
+
+    $selecionar_produto = "SELECT * FROM produto WHERE id_produto = $id ";
+    $retorno_consulta = $mysqli->query( $selecionar_produto) or die($mysqli->error);
+    $produto = $retorno_consulta -> fetch_assoc(); 
+    
+   
+    
   
 
 ?>
@@ -37,7 +47,7 @@
 
                 <div class="mb-3">
                     <label class="form-label" for="">Produto:</label>                                      
-                    <input type="text" class="form-control" name="bt_produto" value="teste">
+                    <input type="text" class="form-control" name="bt_produto" value="<?php echo utf8_encode($produto["produto"])?>">
                 </div>
                 
                 <div class="mb-3">

@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial scale=1.0"> 
-        <link rel="stylesheet" href="produto.css">
+        <link rel="stylesheet" href="../produtos/produto.css">
         <title>Meia Inteira</title>
         <!-- Ícones -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -15,52 +15,18 @@
 
     </head>
     <body>
-        <header>
-
-            <div>
-                <a href="../index.php"><img id="Logo" src="../fotos/logoPI4.png" alt="meia inteira"></a>
-            </div>
-            <div>
-                <form action="">
-                    <input type="text" placeholder="Qual tipo de tênis você gosta?">
-                    <button>Procurar</button>    
-                </form>
-            </div>
-           
-
-        </header>
-
-        <nav>
-            <ul>
-                <li>
-                     <a href="../index.php">Início</a>
-                </li>
-                <li>
-                    <a href="../catalogo.php">Todas os tênis</a>
-                </li>
-                <li>
-                    <a href="../masculino.php">Masculino</a>
-                </li>
-                <li>
-                    <a href="../femenino.php">Feminino</a>
-                </li>                
-                <li>
-                    <a href="../infantil.php">Infantil</a>
-                </li>
-             </ul>
-        </nav>
-            </div>
+        <?php include ("menu.php");?>   
         <main>
             <section class="produto">
                 
                 <div>
-                    <img src="../fotos/sandaliabolinha.png" alt="Produto Meia Doguinho">
+                    <img src="../fotos/tenisazulmasc.png" alt="Produto Floral Branca">
                 </div>
                 <ul>
-                <li><div><h2>Sandálias de bolinhas com decoração de arco</h2></div></li>
-                <li><p>Sandália femenina confortável</p></li>
+                <li><div><h2>Tênis azul Infantil - Confortavel</h2></div></li>
+                <li><p>Tênis masculino confortável</p></li>
                 <li>Marca: Moleca</li>                
-                <li>Tamanho: <button>19 ao 24</button> <button>27 ao 31</button></li>
+                <li>Tamanho: <button>23 ao 28</button> <button>29 ao 33</button></li>
                 <li>Variante: <button>Única</button></li>
                 <li>Quantidade: 
                     <select name="quantidade" id="">
@@ -71,7 +37,7 @@
                         <option value="5">5</option>
                     </select>
                 </li>
-                <li><h3>R$122,90</h3></li>
+                <li><h3>R$99.99</h3></li>
                 <li>Até x2 no cartão sem juros</li>
                 <li><button>Entre em contato</button></li>
                 </ul>
@@ -79,8 +45,7 @@
 
         </main>
             
-        <br>
-
+<br>
         <footer class="fixar">
             <ul>               
                 <li> <a href="institucional.php"> Quem somos </a></li>

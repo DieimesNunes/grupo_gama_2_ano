@@ -1,3 +1,11 @@
+<?php
+    if(!isset($_SESSION)){
+        session_start();
+    }
+    session_unset();
+    $_SESSION['id'] = "1";
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,52 +23,19 @@
 
     </head>
     <body>
-        <header>
-
-            <div>
-                <a href="index.php"><img id="Logo" src="../fotos/logoPI4.png" alt="meia inteira"></a>
-            </div>
-            <div>
-                <form action="">
-                    <input type="text" placeholder="Qual tipo de meia você gosta?">
-                    <button>Procurar</button>    
-                </form>
-            </div>
+        <?php include ("menu.php");?>       
             
-        </header>
-
-        <nav>
-            <ul>
-                <li>
-                     <a href="../index.php">Início</a>
-                </li>
-                <li>
-                    <a href="../catalogo.php">Todas os tênis</a>
-                </li>
-                <li>
-                    <a href="../masculino.php">Masculino</a>
-                </li>
-                <li>
-                    <a href="../femenino.php">Feminino</a>
-                </li>                
-                <li>
-                    <a href="../infantil.php">Infantil</a>
-                </li>
-             </ul>
-        </nav>
-            </div>
         <main>
-            <section class="produto">
-                
+            <section class="produto">                
                 <div>
-                    <img src="../fotos/adidas1.png" alt="Produto Listrada Zebra">
+                    <img src="../fotos/adidas.png" alt="Produto Listrada Zebra">
                 </div>
                 <ul>
-                <li><div><h2>TÊNIS ADIZERO ADIOS PRO 3</h2></div></li>
+                <li><div><h2>TÊNIS ULTRA 4DFWD</h2></div></li>
                 <li><p>Tênis supeeer na moda e estiloso, disponivel para você!!!.</p></li>
-                <li>Marca: Adidas</li>               
+                <li>Marca: Adidas</li>                
                 <li>Tamanho: <button>33 ao 36</button> <button>37 ao 39</button></li>
-                <li>Variante: <button>Laranja</button></li>
+                <li>Variante: <button>Preto</button></li>
                 <li>Quantidade: 
                     <select name="quantidade" id="">
                         <option value="1">1</option>
@@ -70,21 +45,22 @@
                         <option value="5">5</option>
                     </select>
                 </li>
-                <li><h3>R$1.899,99</h3></li>
-                <li>Até x8 no cartão sem juros</li>
-                <li><button>Entre em contato</button></li>
-                </ul>
-            </section>
+                <li><h3>R$1.699,99</h3></li>
+                <li>Até x6 no cartão sem juros</li>
+                <li>
+                    <form action="../contato.php" method="get">
 
-        </main>
-            
-<br>
+                        <button type="submit">Entre em contato</button>
+                    </form> 
+                </li>
+            </section>
+        </main>            
+        <br>
         <footer class="fixar">
             <ul>               
                 <li> <a href="institucional.php"> Quem somos </a></li>
                 <li> <a href="contatoPI.php"> Contato </a><li>
             </ul>
         </footer>
-
     </body>
 </html>

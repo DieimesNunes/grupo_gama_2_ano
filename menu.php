@@ -1,6 +1,6 @@
     <header>
         <div>
-            <a href="index.html"><img id="Logo" src="fotos/logoPI4.png" alt="meia inteira"></a>
+            <a href="index.php"><img id="Logo" src="fotos/logoPI4.png" alt="meia inteira"></a>
         </div>        
     </header>
     <nav>

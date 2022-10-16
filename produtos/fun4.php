@@ -15,41 +15,7 @@
 
     </head>
     <body>
-        <header>
-
-            <div>
-                <a href="index.php"><img id="Logo" src="../fotos/logoPI4.png" alt="meia inteira"></a>
-            </div>
-            <div>
-                <form action="">
-                    <input type="text" placeholder="Qual tipo de tênis você gosta?">
-                    <button>Procurar</button>    
-                </form>
-            </div>
-            
-
-        </header>
-
-        <nav>
-            <ul>
-                <li>
-                     <a href="../index.php">Início</a>
-                </li>
-                <li>
-                    <a href="../catalogo.php">Todas os tênis</a>
-                </li>
-                <li>
-                    <a href="../masculino.php">Masculino</a>
-                </li>
-                <li>
-                    <a href="../femenino.php">Feminino</a>
-                </li>                
-                <li>
-                    <a href="../infantil.php">Infantil</a>
-                </li>
-             </ul>
-        </nav>
-            </div>
+        <?php include ("menu.php");?>   
         <main>
             <section class="produto">
                 

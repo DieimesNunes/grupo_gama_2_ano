@@ -15,51 +15,18 @@
 
     </head>
     <body>
-        <header>
-
-            <div>
-                <a href="index.php"><img id="Logo" src="../fotos/logoPI4.png" alt="meia inteira"></a>
-            </div>
-            <div>
-                <form action="">
-                    <input type="text" placeholder="Qual tipo de meia você gosta?">
-                    <button>Procurar</button>    
-                </form>
-            </div>
-           
-
-        </header>
-
-        <nav>
-            <ul>
-                <li>
-                     <a href="../index.php">Início</a>
-                </li>
-                <li>
-                    <a href="../catalogo.php">Todas os tênis</a>
-                </li>
-                <li>
-                    <a href="../masculino.php">Masculino</a>
-                </li>
-                <li>
-                    <a href="../femenino.php">Feminino</a>
-                </li>                
-                <li>
-                    <a href="../infantil.php">Infantil</a>
-                </li>
-             </ul>
-        </nav>
-            </div>
+        <?php include ("menu.php");?>   
         <main>
             <section class="produto">
                 
                 <div>
-                    <img src="../fotos/airsoftware.png" alt="Produto Listrada Zebra">
+                    <img src="../fotos/sb.png" alt="Produto Listrada Zebra">
                 </div>
                 <ul>
-                    <li><div><h2>Air Max Sportswear </h2></div></li>
+                    <li><div><h2>Air Max Dawn</h2></div></li>
                     <li><p>Super confortável e especial para você!!</p></li>
-                    <li>Marca: Nike</li>                    
+                    <li>Marca: Nike</li>
+                    <li>Composição: 80% Algodão, 20% Poliéster</li>
                     <li>Tamanho: <button>37 ao 40</button> <button>40 ao 44</button></li>
                     <li>Variante: <button>Preto, Branco e Vermelho</button></li>
                     <li>Quantidade: 
@@ -71,8 +38,8 @@
                             <option value="5">5</option>
                         </select>
                     </li>
-                    <li><h3>R$459,99</h3></li>
-                    <li>Até x2 no cartão sem juros</li>
+                    <li><h3>R$900</h3></li>
+                    <li>Até x3 no cartão sem juros</li>
                     <li><button>Entre em contato</button></li>
                 </ul>
             </section>

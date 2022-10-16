@@ -1,3 +1,11 @@
+<?php
+    if(!isset($_SESSION)){
+        session_start();
+    }
+    session_unset();
+    $_SESSION['id'] = "3";
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,53 +23,19 @@
 
     </head>
     <body>
-        <header>
-
-            <div>
-                <a href="index.php"><img id="Logo" src="../fotos/logoPI4.png" alt="meia inteira"></a>
-            </div>
-            <div>
-                <form action="">
-                    <input type="text" placeholder="Qual tipo de meia você gosta?">
-                    <button>Procurar</button>    
-                </form>
-            </div>
-           
-
-        </header>
-
-        <nav>
-            <ul>
-                <li>
-                     <a href="../index.php">Início</a>
-                </li>
-                <li>
-                    <a href="../catalogo.php">Todas os tênis</a>
-                </li>
-                <li>
-                    <a href="../masculino.php">Masculino</a>
-                </li>
-                <li>
-                    <a href="../femenino.php">Feminino</a>
-                </li>                
-                <li>
-                    <a href="../infantil.php">Infantil</a>
-                </li>
-             </ul>
-        </nav>
-            </div>
+        <?php include ("menu.php");?>   
         <main>
             <section class="produto">
                 
                 <div>
-                    <img src="../fotos/nike2.png" alt="Produto Listrada Zebra">
+                    <img src="../fotos/adidas2.png" alt="Produto Listrada Zebra">
                 </div>
                 <ul>
-                    <li><div><h2>TENIS W NIKE CRATER IMPACT</h2></div></li>
+                    <li><div><h2>TÊNIS NMD_R1</h2></div></li>
                     <li><p>Tênis supeeer na moda e estiloso, disponivel para você!!!.</p></li>
-                    <li>Marca: Nike</li>               
+                    <li>Marca: Adidas</li>               
                     <li>Tamanho: <button>33 ao 36</button> <button>37 ao 39</button></li>
-                    <li>Variante: <button>Preto e Branco</button></li>
+                    <li>Variante: <button>Rosa e Amarelo</button></li>
                     <li>Quantidade: 
                         <select name="quantidade" id="">
                             <option value="1">1</option>
@@ -71,9 +45,14 @@
                             <option value="5">5</option>
                         </select>
                     </li>
-                    <li><h3>R$509,99</h3></li>
-                    <li>Até x3 no cartão sem juros</li>
-                    <li><button>Entre em contato</button></li>
+                    <li><h3>R$899,99</h3></li>
+                    <li>Até x4 no cartão sem juros</li>
+                    <li>
+                        <form action="../contato.php" method="get">
+
+                            <button type="submit">Entre em contato</button>
+                        </form> 
+                    </li>
                 </ul>
             </section>
 

@@ -1,3 +1,11 @@
+<?php
+    if(!isset($_SESSION)){
+        session_start();
+    }
+    session_unset();
+    $_SESSION['id'] = "7";
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,53 +23,19 @@
 
     </head>
     <body>
-        <header>
-
-            <div>
-                <a href="index.php"><img id="Logo" src="../fotos/logoPI4.png" alt="meia inteira"></a>
-            </div>
-            <div>
-                <form action="">
-                    <input type="text" placeholder="Qual tipo de meia você gosta?">
-                    <button>Procurar</button>    
-                </form>
-            </div>
-            
-
-        </header>
-
-        <nav>
-            <ul>
-                <li>
-                     <a href="../index.php">Início</a>
-                </li>
-                <li>
-                    <a href="../catalogo.php">Todas os tênis</a>
-                </li>
-                <li>
-                    <a href="../masculino.php">Masculino</a>
-                </li>
-                <li>
-                    <a href="../femenino.php">Feminino</a>
-                </li>                
-                <li>
-                    <a href="../infantil.php">Infantil</a>
-                </li>
-             </ul>
-        </nav>
-            </div>
+        <?php include ("menu.php");?>   
         <main>
             <section class="produto">
                 
                 <div>
-                    <img src="../fotos/brancoair.png" alt="Produto Listrada Zebra">
+                    <img src="../fotos/nike3.png" alt="Produto Listrada Zebra">
                 </div>
                 <ul>
-                    <li><div><h2>Tênis Nike Air Force 1</h2></div></li>
-                    <li><p>Super confortável e especial para você!!</p></li>
-                    <li>Marca: Nike</li>                    
-                    <li>Tamanho: <button>37 ao 40</button> <button>40 ao 44</button></li>
-                    <li>Variante: <button>Preto, Branco e Vermelho</button></li>
+                    <li><div><h2>Tênis Nike Air Max 90 SE Feminino</h2></div></li>
+                    <li><p>Tênis supeeer na moda e estiloso, disponivel para você!!!.</p></li>
+                    <li>Marca: Nike</li>               
+                    <li>Tamanho: <button>33 ao 36</button> <button>37 ao 39</button></li>
+                    <li>Variante: <button>Preto</button></li>
                     <li>Quantidade: 
                         <select name="quantidade" id="">
                             <option value="1">1</option>
@@ -71,12 +45,15 @@
                             <option value="5">5</option>
                         </select>
                     </li>
-                    <li><h3>R$700,00</h3></li>
+                    <li><h3>R$ 739,99</h3></li>
                     <li>Até x3 no cartão sem juros</li>
-                    <li><button>Entre em contato</button></li>
+                    <li>
+                        <form action="../contato.php" method="get">
+                            <button type="submit">Entre em contato</button>
+                        </form> 
+                    </li>
                 </ul>
             </section>
-
         </main>
             
 <br>

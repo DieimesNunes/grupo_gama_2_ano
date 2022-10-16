@@ -15,53 +15,19 @@
 
     </head>
     <body>
-        <header>
-
-            <div>
-                <a href="index.php"><img id="Logo" src="../fotos/logoPI4.png" alt="meia inteira"></a>
-            </div>
-            <div>
-                <form action="">
-                    <input type="text" placeholder="Qual tipo de tênis você gosta?">
-                    <button>Procurar</button>    
-                </form>
-            </div>
-
-
-        </header>
-
-        <nav>
-            <ul>
-                <li>
-                     <a href="../index.php">Início</a>
-                </li>
-                <li>
-                    <a href="../catalogo.php">Todas os tênis</a>
-                </li>
-                <li>
-                    <a href="../masculino.php">Masculino</a>
-                </li>
-                <li>
-                    <a href="../femenino.php">Feminino</a>
-                </li>                
-                <li>
-                    <a href="../infantil.php">Infantil</a>
-                </li>
-             </ul>
-        </nav>
-            </div>
+        <?php include ("menu.php");?>   
         <main>
             <section class="produto">
                 
                 <div>
-                    <img src="../fotos/tenisverde.png" alt="Produto Listrada Zebra">
+                    <img src="../fotos/teniscoraçao.png" alt="Produto Listrada Zebra">
                 </div>
                 <ul>
-                <li><div><h2>Tênis Infantil Mz Flex Menino Dinossauro Rex/Verde</h2></div></li>
-                <li><p>Tênis masculino super estiloso - confortável</p></li>
-                <li>Marca: Moleca</li>                
-                <li>Tamanho: <button>23 ao 28</button> <button>29 ao 33</button></li>
-                <li>Variante: <button>Única</button></li>
+                    <li><div><h2>Tênis Preto Infantil- Confortavel </h2></div></li>
+                    <li><p>Tênis femenino confortável</p></li>
+                    <li>Marca: Moleca</li>                
+                    <li>Tamanho: <button>23 ao 28</button> <button>29 ao 33</button></li>
+                    <li>Variante: <button>Única</button></li>
                 <li>Quantidade: 
                     <select name="quantidade" id="">
                         <option value="1">1</option>
@@ -71,7 +37,7 @@
                         <option value="5">5</option>
                     </select>
                 </li>
-                <li><h3>R$59,90</h3></li>
+                <li><h3>R$150,00</h3></li>
                 <li>Até x2 no cartão sem juros</li>
                 <li><button>Entre em contato</button></li>
                 </ul>

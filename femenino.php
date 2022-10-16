@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE php>
+<php>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,109 +15,76 @@
 
     </head>
     <body>
-        <header>
-            <div>
-                <a href="index.html"><img id="Logo" src="fotos/logoPI4.png" alt="meia inteira"></a>
-            </div>
-            <div>
-                <form action="">
-                    <input type="text" placeholder="Qual tipo de meia você gosta?">
-                    <button>Procurar</button>    
-                </form>
-            </div>
-           
-
-        </header>
-
-        <nav>
-            <ul>
-                <li>
-                     <a href="index.php">Início</a>
-                </li>
-                <li>
-                    <a href="catalogo.php">Todas os tênis</a>
-                </li>
-                <li>
-                    <a href="masculino.php">Masculino</a>
-                </li>
-                <li>
-                    <a href="femenino.php">Feminino</a>
-                </li>                
-                <li>
-                    <a href="infantil.php">Infantil</a>
-                </li>
-             </ul>
-        </nav>
-            </div>
+        <?php include ("menu.php");?>   
             <main>
 
             <section class="produto">
 
         <div class="Listradas">
-            <a href="produtos/fem1.html"><img src="fotos\adidas.png" alt="Produto">
+            <a href="produtos/fem1.php"><img src="fotos\adidas.png" alt="Produto">
             <p>TÊNIS ULTRA 4DFWD</p>
             <h3>R$1.699,99</h3>
             </a>
         </div>
 
     <div class="Listradas">
-        <a href="produtos/fem2.html"><img src="fotos\adidas1.png" alt="Produto">
+        <a href="produtos/fem2.php"><img src="fotos\adidas1.png" alt="Produto">
         <p>TÊNIS ADIZERO ADIOS PRO 3</p>
         <h3>R$1.899,99</h3>
         </a>
     </div>
 
    <div class="Listradas">
-        <a href="produtos/fem3.html"><img src="fotos\adidas2.png" alt="Produto">
+        <a href="produtos/fem3.php"><img src="fotos\adidas2.png" alt="Produto">
         <p>TÊNIS NMD_R1</p>
         <h3>R$899,99</h3>
         </a>
     </div>
 
         <div class="Listradas">
-            <a href="produtos/fem4.html"><img src="fotos\adidas3.png" alt="Produto">
+            <a href="produtos/fem4.php"><img src="fotos\adidas3.png" alt="Produto">
             <p>TÊNIS FORUM BOLD</p>
             <h3>R$699,99</h3>
             </a>
         </div>
 
            <div class="Listradas">
-                <a href="produtos/fem5.html"><img src="fotos\adidas4.png" alt="Produto">
+                <a href="produtos/fem5.php"><img src="fotos\adidas4.png" alt="Produto">
                 <p>TÊNIS SUPERSTAR</p>
                 <h3>R$349,99</h3>
                 </a>
             </div>
 
             <div class="Listradas">
-                <a href="produtos/fem6.html"><img src="fotos\nike.png" alt="Produto">
+                <a href="produtos/fem6.php"><img src="fotos\nike.png" alt="Produto">
                 <p>TENIS W NIKE REACT INFINITY RUN FK 3</p>
                 <h3>R$ 579,99</h3>
                 </a>
             </div>
 
             <div class="Listradas">
-                <a href="produtos/fem7.html"><img src="fotos\nike3.png" alt="Produto">
+                <a href="produtos/fem7.php"><img src="fotos\nike3.png" alt="Produto">
                 <p>Tênis Nike Air Max 90 SE Feminino</p>
                 <h3>R$ 739,99</h3>
                 </a>
             </div>
 
                 <div class="Listradas">
-                    <a href="produtos/fem8.html"><img src="fotos\nike4.png" alt="Produto">
+                    <a href="produtos/fem8.php"><img src="fotos\nike4.png" alt="Produto">
                     <p>TENIS NIKE REVOLUTION 6</p>
                     <h3>R$ 399,99</h3>
                     </a>
                 </div>
 
             <div class="Listradas">
-                <a href="produtos/fem9.html"><img src="fotos\nike5.png" alt="Produto">
+                <a href="produtos/fem9.php"><img src="fotos\nike5.png" alt="Produto">
                 <p>TENIS W NSW AF1 AF1</p>
                 <h3>R$ 1.099,99</h3>
                 </a>
             </div>
 
             <div class="Listradas">
-                <a href="produtos/fem10.html"><img src="fotos\nike2.png" alt="Produto">
+                <a href="produtos/fem10.php"><img src="fotos\nike2.png" alt="Produto">
                 <p>TENIS W NIKE CRATER IMPACT</p>
                 <h3>R$ 509,99</h3>
                 </a>
@@ -139,4 +106,4 @@
         </footer>
 
     </body>
-</html>
+</php>
