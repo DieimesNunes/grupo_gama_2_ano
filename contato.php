@@ -8,14 +8,25 @@
 
     $selecionar_produto = "SELECT * FROM produto WHERE id_produto = $id ";
     $retorno_consulta = $mysqli->query( $selecionar_produto) or die($mysqli->error);
-    $produto = $retorno_consulta -> fetch_assoc(); 
+    $produto_banco = $retorno_consulta -> fetch_assoc(); 
 
     if(isset($_POST["bt_nome"])){
         $nome = $_POST["bt_nome"];
         $email = $_POST["bt_email"];
+<<<<<<< HEAD
         $produto = $_POST["bt_produto"];
         $pedido = $_POST["bt_pedido"];
+=======
+       // $produto = $_POST["bt_produto"];
+        $produto = $produto_banco["produto"];
+        $pedido = $_POST["bt_pedido"];
+
+        $mysqli -> query("INSERT INTO pedido (nome, email, produto, pedido) values ('$nome', '$email', '$produto', '$pedido')") or die ($mysqli->error);
+        $_SESSION['msg'] = "<div class='alert alert-success'>Mensagem enviado</div>";
+>>>>>>> acerto
     }
+
+   
 ?>
 
 <!DOCTYPE html>
@@ -38,23 +49,36 @@
                 <h1>Fale Conosco!</h1>
                 <div class="mb-3"> 
                     <label class="form-label" for="">Nome:</label>                   
+<<<<<<< HEAD
                     <input type="text" class="form-control" placeholder="Digite o seu nome" name="bt_nome">
                 </div>                
+=======
+                    <input type="text" class="form-control" placeholder="Digite o seu nome" name="bt_nome" required>
+                </div>
+                
+>>>>>>> acerto
                 <div class="mb-3">
                     <label class="form-label" for="">Email:</label>                  
-                    <input type="text" class="form-control" placeholder="Digite o seu email" name="bt_email">
+                    <input type="text" class="form-control" placeholder="Digite o seu email" name="bt_email" required>
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label" for="">Produto:</label>                                      
-                    <input type="text" class="form-control" name="bt_produto" value="<?php echo utf8_encode($produto["produto"])?>">
+                    <input type="text" class="form-control" name="bt_produto" value="<?php echo utf8_encode($produto_banco["produto"])?>" required>
                 </div>
                 
                 <div class="mb-3">
                     <label class="form-label" for="">Pedido:</label>                                      
-                    <textarea class="form-control" rows="3"  placeholder="Digite o seu tamanho..." name="bt_pedido"  ></textarea>
+                    <textarea class="form-control" rows="3"  placeholder="Digite o seu tamanho..." name="bt_pedido" required></textarea>
                 </div> 
-                
+                <?php
+                    if(isset($_SESSION['msg'])){
+                        echo $_SESSION['msg'];
+                        
+                        
+                        unset($_SESSION['msg']);                   
+                    }
+                ?>
                 <input class="btn btn-primary" type="submit" value="Enviar">
                 <input class="btn btn-danger"type="reset" value="Cancelar">
             </form>
