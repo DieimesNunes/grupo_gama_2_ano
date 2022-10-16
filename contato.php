@@ -14,8 +14,7 @@
         $nome = $_POST["bt_nome"];
         $email = $_POST["bt_email"];
         $produto = $_POST["bt_produto"];
-
-
+        $pedido = $_POST["bt_pedido"];
     }
 ?>
 
@@ -40,8 +39,7 @@
                 <div class="mb-3"> 
                     <label class="form-label" for="">Nome:</label>                   
                     <input type="text" class="form-control" placeholder="Digite o seu nome" name="bt_nome">
-                </div>
-                
+                </div>                
                 <div class="mb-3">
                     <label class="form-label" for="">Email:</label>                  
                     <input type="text" class="form-control" placeholder="Digite o seu email" name="bt_email">
