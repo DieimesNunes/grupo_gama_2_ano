@@ -1,5 +1,10 @@
 <?php
-    
+    include("conexao.php");
+
+    $selecionar_sql = "SELECT * FROM pedido";
+
+    $retorno_consulta = $mysqli->query( $selecionar_sql) or die($mysqli->error);
+    $quantidade_pedidos = $retorno_consulta->num_rows; // Retornar quantidade de linhas
 ?>
 
 <!DOCTYPE html>
@@ -24,16 +29,18 @@
             <div class="table-responsive">
                 <table class="table table-hover">
                     <thead>
-                        <th>Cliente</th>
-                        <th>Telefone</th>
-                        <th>Produto</th>
-                        <th>Data</th>                       
+                        <th>Identificador</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Produto</th>                       
+                        <th>Pedido</th>
+                        <th>Data</th>
                     </thead>
                     <tbody>
                         <?php
-                            if ( $quantidade_mensagens == 0){ ?>
+                            if ( $quantidade_pedidos == 0){ ?>
                             <tr>
-                                <td colspan="4"> Nenhuma mensagem foi cadastrada.</td>
+                                <td colspan="6"> Nenhuma mensagem foi cadastrada.</td>
                             </tr>
 
                         <?php   } else { 
@@ -41,34 +48,18 @@
                             while ($mensagem = $retorno_consulta -> fetch_assoc()){
                                 $data = date("d/m/Y H:i", strtotime($mensagem['data']));
 
-                                if($mensagem['status']=="ok"){
-                                    $mensagem['status'] = "ok";
-                                }elseif ($mensagem['status']=="recup"){
-                                    $mensagem['status'] = "recup";
-                                }else{
-                                    $mensagem['status'] = "corrigir";
-                                }
+                                
                         ?>
+                                <tr>
 
-                                <tr class="<?php echo $mensagem['status']; ?>">
-
-                                    <td class="<?php echo $mensagem['status']; ?>"><?php echo $mensagem['id_arquivo']; ?></td>
-                                    <td class="<?php echo $mensagem['status']; ?>"><?php echo ($mensagem['nome']); ?></td>
-                                    <td > <a class="<?php echo $mensagem['status']; ?>" href="../<?php echo $mensagem['path']; ?>"><?php echo $mensagem['path']; ?></a></td>
-                                    <td class="<?php echo $mensagem['status']; ?>"><?php echo $data; ?></td>
-                                    <td class="<?php echo $mensagem['status']; ?>"><?php echo $mensagem['atividade']; ?></td>
-                                    <td class="<?php echo $mensagem['status']; ?>"> <?php echo $mensagem['status']; ?></td>
-
-                                    
-
+                                    <td><?php echo $mensagem['id_pedido']; ?></td>
+                                    <td><?php echo ($mensagem['nome']); ?></td>
+                                    <td><?php echo ($mensagem['email']); ?></td>
+                                    <td><?php echo ($mensagem['produto']); ?></td>                                    
+                                    <td><?php echo $data; ?></td>
                                     <td>
-
-                                        <a class="btn btn-default" href="editar_trabalhos.php?id=<?php echo $mensagem['id_arquivo']; ?>" role="button"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Editar</a>
-
-                                        <a class="btn btn-default" href="deletar_trabalhos.php?id=<?php echo $mensagem['id_arquivo']; ?>" role="button"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Deletar</a>
-
-                                        
-
+                                        <a class="btn btn-default" href="editar_pedido.php?id=<?php echo $mensagem['id_pedido']; ?>" role="button"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Editar</a>
+                                        <a class="btn btn-default" href="deletar_pedido.php?id=<?php echo $mensagem['id_pedido']; ?>" role="button"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Deletar</a>
                                     </td>
 
                                 </tr> 
@@ -88,15 +79,5 @@
                 </table>
             </div>
         </div>
-
-        <section class="produto">
-            <div class="Listradas">
-                <a href="produtos/fem1.html"><img src="../fotos\adidas.png" alt="Produto">
-                <p>TÊNIS ULTRA 4DFWD</p>
-                <h3>R$1.699,99</h3>
-                </a>
-            </div>
-        </section>
-        
     </body>
 </html>
