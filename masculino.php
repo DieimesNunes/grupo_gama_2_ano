@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE.php>
+.php>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,7 @@
 
     <section class="produto">
             <div class="basicas">
-                    <a href="produtos/masc4.html"><img src="fotos\dunkazul.png" alt="Produto">
+                    <a href="produtos/masc4.php"><img src="fotos\dunkazul.png" alt="Produto">
                     <p>
                         Tênis WMNS Air Jordan 1 Low RE- Azul</p>
                     <h3>R$90,00</h3>
@@ -28,14 +28,14 @@
             </div>
 
             <div class="basicas">
-                <a href="produtos/masc1.html"><img src="fotos\airpreto.png"alt ="Produto" width="300">
+                <a href="produtos/masc1.php"><img src="fotos\airpreto.png"alt ="Produto" width="300">
                 <p>Tênis Nike Air Max Excee - Preto</p>
                 <h3>R$90,00</h3>
                 </a>
             </div>
 
             <div class="basicas">
-                <a href="produtos/masc3.html"><img src="fotos\brancoair.png" alt="Produto" width="500">
+                <a href="produtos/masc3.php"><img src="fotos\brancoair.png" alt="Produto" width="500">
                 <p>Tênis Nike Air Force 1 - Branco</p>
                 <h3>R$90,00</h3>
                 </a>
@@ -44,35 +44,35 @@
 
 
             <div class="basicas">
-                <a href="produtos/masc9.html"><img src="fotos\tenis6.png" alt="Produto" width="1000">
+                <a href="produtos/masc9.php"><img src="fotos\tenis6.png" alt="Produto" width="1000">
                 <p>Tênis Nike Sportswear Air Max -  Preto</p>
                 <h3>R$90,00</h3>
                 </a>
             </div>
 
             <div class="basicas">
-                <a href="produtos/masc6.html"><img src="fotos\tenis4.png" alt="Produto">
+                <a href="produtos/masc6.php"><img src="fotos\tenis4.png" alt="Produto">
                 <p>Air Max Dawn -  Preto</p>
                 <h3>R$90,00</h3>
                 </a>
             </div>
 
             <div class="basicas">
-                <a href="produtos/masc2.html"><img src="fotos\airsoftware.png" alt="Produto">
+                <a href="produtos/masc2.php"><img src="fotos\airsoftware.png" alt="Produto">
                 <p>Air Max Sportswear - Azul&Preto</p>
                 <h3>R$90,00</h3>
                 </a>
             </div>
 
             <div class="basicas">
-                <a href="produtos/masc8.html"><img src="fotos\sb.png" alt="Produto">
+                <a href="produtos/masc8.php"><img src="fotos\sb.png" alt="Produto">
                 <p>Nike SB - Preto</p>
                 <h3>R$90,00</h3>
                 </a>
             </div>
 
             <div class="basicas">
-                <a href="produtos/masc5.html"><img src="fotos\jordanvermei.png" alt="Produto">
+                <a href="produtos/masc5.php"><img src="fotos\jordanvermei.png" alt="Produto">
                 <p>Tênis Jordan 1 Mid -  Preto&Vermelho</p>
                 <h3>R$90,00</h3>
                 </a>
@@ -81,14 +81,14 @@
 
 
             <div class="basicas">
-                <a href="produtos/masc10.html"><img src="fotos\teniszoom.png" alt="Produto">
+                <a href="produtos/masc10.php"><img src="fotos\teniszoom.png" alt="Produto">
                 <p>Tênis Nike Air Zoom Pegasus  -  Preto&Dourado</p>
                 <h3>R$90,00</h3>
                 </a>
             </div>
 
             <div class="basicas">
-                    <a href="produtos/masc7.html"><img src="fotos\tenisnike.png" alt="Produto">
+                    <a href="produtos/masc7.php"><img src="fotos\tenisnike.png" alt="Produto">
                     <p>Tênis Nike Downshifter 11 -  Preto</p>
                     <h3>R$90,00</h3>
                     </a>
@@ -106,4 +106,4 @@
         </footer>
 
     </body>
-</html>
+<.php>

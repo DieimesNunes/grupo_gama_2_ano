@@ -20,7 +20,7 @@
             <section class="produto">
                 <div class="masculino">
 
-                    <a href="produto.html"><img src="fotos\dunkazul.png" alt="Produto">
+                    <a href="produtos/masc4.php"><img src="fotos\dunkazul.png" alt="Produto">
 
                     <p>
 
@@ -36,7 +36,7 @@
 
                 <div class="masculino">
 
-                    <a href="produtos/doguinho.html"><img src="fotos\airpreto.png"alt ="Produto" width="300">
+                    <a href="produtos/masc1.php"><img src="fotos\airpreto.png"alt ="Produto" width="300">
 
                     <p>Tênis Nike Air Max Excee - Preto</p>
 
@@ -48,7 +48,7 @@
 
                 <div class="masculino">
 
-                    <a href="produtos/panda.html"><img src="fotos\brancoair.png" alt="Produto" width="500">
+                    <a href="produtos/masc3.php"><img src="fotos\brancoair.png" alt="Produto" width="500">
 
                     <p>Tênis Nike Air Force 1 - Branco</p>
 
@@ -60,7 +60,7 @@
 
                 <div class="masculino">
 
-                    <a href="produtos/floralpreto.html"><img src="fotos\tenis6.png" alt="Produto" width="1000">
+                    <a href="produtos/masc9.php"><img src="fotos\tenis6.png" alt="Produto" width="1000">
 
                     <p>Tênis Nike Sportswear Air Max -  Preto</p>
 
@@ -72,7 +72,7 @@
 
                   <div class="masculino">
 
-                    <a href="produtos/floralpreto.html"><img src="fotos\tenis4.png" alt="Produto">
+                    <a href="produtos/masc6.php"><img src="fotos\tenis4.png" alt="Produto">
 
                     <p>Air Max Dawn -  Preto</p>
 
@@ -84,7 +84,7 @@
 
                 <div class="masculino">
 
-                    <a href="produtos/floralpreto.html"><img src="fotos\airsoftware.png" alt="Produto">
+                    <a href="produtos/masc2.php"><img src="fotos\airsoftware.png" alt="Produto">
 
                     <p>Air Max Sportswear - Azul&Preto</p>
 
@@ -96,7 +96,7 @@
 
                 <div class="masculino">
 
-                    <a href="produtos/floralpreto.html"><img src="fotos\jordanvermei.png" alt="Produto">
+                    <a href="produtos/masc8.php"><img src="fotos\jordanvermei.png" alt="Produto">
 
                     <p>Tênis Jordan 1 Mid -  Preto&Vermelho</p>
 
@@ -108,7 +108,7 @@
 
                 <div class="masculino">
 
-                    <a href="produtos/floralpreto.html"><img src="fotos\teniszoom.png" alt="Produto">
+                    <a href="produtos/masc5.php"><img src="fotos\teniszoom.png" alt="Produto">
 
                     <p>Tênis Nike Air Zoom Pegasus  -  Preto&Dourado</p>
 
@@ -120,7 +120,7 @@
 
                 <div class="masculino">
 
-                    <a href="produtos/floralpreto.html"><img src="fotos\tenisnike.png" alt="Produto">
+                    <a href="produtos/masc10.php"><img src="fotos\tenisnike.png" alt="Produto">
                     <p>Tênis Nike Downshifter 11 -  Preto</p>
 
                     <h3>R$90,00</h3>
@@ -131,7 +131,7 @@
 
                 <div class="masculino">
 
-                    <a href="produtos/floralpreto.html"><img src="fotos/tenis1.png" alt="Produto">
+                    <a href="produtos/masc7.php"><img src="fotos/tenis1.png" alt="Produto">
 
                     <p>Tênis Nike Downshifter 11 -  Preto</p>
 
@@ -143,7 +143,7 @@
 
                     <div class="femenino">
 
-                        <a href="produtos/doguinho.html"><img src="fotos\adidas1.png" alt="Produto">
+                        <a href="produtos/fem1.php"><img src="fotos\adidas1.png" alt="Produto">
     
                         <p>TÊNIS ADIZERO ADIOS PRO 3</p>
     
@@ -155,7 +155,7 @@
 
                     <div class="femenino">
 
-                        <a href="produtos/panda.html"><img src="fotos\adidas2.png" alt="Produto">
+                        <a href="produtos/fem2.php"><img src="fotos\adidas2.png" alt="Produto">
     
                         <p>TÊNIS NMD_R1</p>
     
@@ -167,7 +167,7 @@
 
                     <div class="femenino">
 
-                        <a href="produtos/floralpreto.html"><img src="fotos\adidas3.png" alt="Produto">
+                        <a href="produtos/fem3.php"><img src="fotos\adidas3.png" alt="Produto">
     
                         <p>TÊNIS FORUM BOLD</p>
     
@@ -179,7 +179,7 @@
 
                     <div class="femenino">
 
-                        <a href="produtos/listradazebra.html"><img src="fotos\adidas4.png" alt="Produto">
+                        <a href="produtos/fem4.php"><img src="fotos\adidas4.png" alt="Produto">
     
                         <p>TÊNIS SUPERSTAR</p>
     
@@ -191,7 +191,7 @@
 
                     <div class="femenino">
 
-                        <a href="produtos/listradasweet.html"><img src="fotos\nike.png" alt="Produto">
+                        <a href="produtos/fem5.php"><img src="fotos\nike.png" alt="Produto">
     
                         <p>TENIS W NIKE REACT INFINITY RUN FK 3</p>
     
@@ -203,7 +203,7 @@
 
                     <div class="femenino">
 
-                        <a href="produtos/listradasweet.html"><img src="fotos\nike1.png" alt="Produto">
+                        <a href="produtos/fem6.php"><img src="fotos\nike1.png" alt="Produto">
     
                         <p>Tênis Nike Air Max 90 SE Feminino</p>
     
@@ -215,7 +215,7 @@
 
                     <div class="femenino">
 
-                        <a href="produtos/listradasweet.html"><img src="fotos\adidas.png" alt="Produto">
+                        <a href="produtos/fem7.php"><img src="fotos\adidas.png" alt="Produto">
     
                         <p>TENIS NIKE REVOLUTION 6</p>
     
@@ -227,7 +227,7 @@
 
                     <div class="femenino">
 
-                        <a href="produtos/listradasweet.html"><img src="fotos\nike3.png" alt="Produto">
+                        <a href="produtos/fem8.php"><img src="fotos\nike3.png" alt="Produto">
     
                         <p>TENIS W NSW AF1 AF1</p>
     
@@ -239,7 +239,7 @@
 
                     <div class="femenino">
 
-                        <a href="produtos/listradasweet.html"><img src="fotos\nike4.png" alt="Produto">
+                        <a href="produtos/fem9.php"><img src="fotos\nike4.png" alt="Produto">
     
                         <p>TENIS W NIKE CRATER IMPACT</p>
     
@@ -251,33 +251,23 @@
 
                     <div class="femenino">
 
-                        <a href="produtos/listradasweet.html"><img src="fotos/nike5.png" alt="Produto">
+                        <a href="produtos/fem10.php"><img src="fotos/nike5.png" alt="Produto">
     
                         <p>TENIS W NIKE CRATER IMPACT</p>
     
-                        <h3>R$ 509,99</h3>
-    
-                        </a>
-    
+                        <h3>R$ 509,99</h3>    
+                        </a>    
                     </div>
 
                     <div class="infantil">
-
-                        <a href="produtos/raposinha.html"><img src="fotos/botinhamarrom.png" alt="Produto">
+                        <a href="produtos/fem10.php"><img src="fotos/botinhamarrom.png" alt="Produto">
 
                             <p>Tênis Tricae Menino Listras Caramelo </p>
         
-                            <h3>R$ 69,90</h3>
-        
-                            </a>
-        
-                        </div>
-    
+                            <h3>R$ 69,90</h3>        
+                            </a>        
+                        </div>    
                     </div>
-
-                    
-
-                   
 
                     <div class="infantil">                      
 

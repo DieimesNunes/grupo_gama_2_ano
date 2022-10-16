@@ -4,17 +4,19 @@
         session_start();
     }  
 
-    $id= $_SESSION['id'];
-    
+    $id= $_SESSION['id'];    
 
     $selecionar_produto = "SELECT * FROM produto WHERE id_produto = $id ";
     $retorno_consulta = $mysqli->query( $selecionar_produto) or die($mysqli->error);
     $produto = $retorno_consulta -> fetch_assoc(); 
-    
-   
-    
-  
 
+    if(isset($_POST["bt_nome"])){
+        $nome = $_POST["bt_nome"];
+        $email = $_POST["bt_email"];
+        $produto = $_POST["bt_produto"];
+
+
+    }
 ?>
 
 <!DOCTYPE html>
@@ -52,7 +54,7 @@
                 
                 <div class="mb-3">
                     <label class="form-label" for="">Pedido:</label>                                      
-                    <textarea class="form-control" rows="3"  placeholder="Comentários" name="bt_comentario"  ></textarea>
+                    <textarea class="form-control" rows="3"  placeholder="Digite o seu tamanho..." name="bt_pedido"  ></textarea>
                 </div> 
                 
                 <input class="btn btn-primary" type="submit" value="Enviar">
