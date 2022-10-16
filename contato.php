@@ -4,7 +4,8 @@
         session_start();
     }  
 
-    $id= $_SESSION['id'];    
+    $id= $_SESSION['id'];
+    $teste = "teste";
 
     $selecionar_produto = "SELECT * FROM produto WHERE id_produto = $id ";
     $retorno_consulta = $mysqli->query( $selecionar_produto) or die($mysqli->error);
