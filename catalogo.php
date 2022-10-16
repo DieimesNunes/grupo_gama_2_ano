@@ -121,7 +121,6 @@
                 <div class="masculino">
 
                     <a href="produtos/floralpreto.html"><img src="fotos\tenisnike.png" alt="Produto">
-
                     <p>Tênis Nike Downshifter 11 -  Preto</p>
 
                     <h3>R$90,00</h3>
