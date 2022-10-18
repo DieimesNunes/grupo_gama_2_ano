@@ -18,13 +18,7 @@
             <div>
                 <a href="index.php"><img id="Logo" src="fotos/logoPI4.png" alt="meia inteira"></a>
             </div>
-            <div>
-                <form action="">
-                    <input type="text" placeholder="Qual tipo de tênis você gosta?">
-                    <button>Procurarr</button>    
-                </form> 
         </header>
-
         <nav>
             <ul>
                 <li>
