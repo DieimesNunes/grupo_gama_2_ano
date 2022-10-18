@@ -1,3 +1,10 @@
+<?php
+    if(!isset($_SESSION)){
+        session_start();
+    }
+    session_unset();
+    $_SESSION['id'] = "28";    
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -40,12 +47,15 @@
                     </li>
                     <li><h3>R$900</h3></li>
                     <li>Até x3 no cartão sem juros</li>
-                    <li><button>Entre em contato</button></li>
+                    <li>
+                        <form action="../contato.php" method="get">
+
+                            <button type="submit">Entre em contato</button>
+                        </form> 
+                    </li>
                 </ul>
             </section>
-
-        </main>
-            
+        </main>            
 <br>
         <footer class="fixar">
             <ul>               

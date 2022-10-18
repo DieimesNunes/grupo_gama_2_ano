@@ -1,3 +1,10 @@
+<?php
+    if(!isset($_SESSION)){
+        session_start();
+    }
+    session_unset();
+    $_SESSION['id'] = "29";    
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,8 +24,7 @@
     <body>
         <?php include ("menu.php");?>   
         <main>
-            <section class="produto">
-                
+            <section class="produto">                
                 <div>
                     <img src="../fotos/tenis6.png" alt="Produto Listrada Zebra">
                 </div>
@@ -40,12 +46,15 @@
                     </li>
                     <li><h3>R$1,700</h3></li>
                     <li>Até x2 no cartão sem juros</li>
-                    <li><button>Entre em contato</button></li>
+                    <li>
+                        <form action="../contato.php" method="get">
+
+                            <button type="submit">Entre em contato</button>
+                        </form> 
+                    </li>
                 </ul>
             </section>
-
-        </main>
-            
+        </main>            
 <br>
         <footer class="fixar">
             <ul>               

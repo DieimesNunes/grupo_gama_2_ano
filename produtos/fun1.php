@@ -3,10 +3,7 @@
         session_start();
     }
     session_unset();
-    $_SESSION['id'] = "11";
-        
-    
-    
+    $_SESSION['id'] = "11";    
 ?>
 
 <!DOCTYPE html>

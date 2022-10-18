@@ -1,3 +1,10 @@
+<?php
+    if(!isset($_SESSION)){
+        session_start();
+    }
+    session_unset();
+    $_SESSION['id'] = "21";    
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -23,28 +30,31 @@
                     <img src="../fotos/airpreto.png" alt="Produto Listrada Zebra">
                 </div>
                 <ul>
-                <li><div><h2>Tênis Nike Air Max Excee - Preto</h2></div></li>
-                <li><p>Super confortável e especial para você!!</p></li>
-                <li>Marca: Nike</li>                
-                <li>Tamanho: <button>37 ao 40</button> <button>40 ao 44</button></li>
-                <li>Variante: <button>Preto, Branco e Vermelho</button></li>
-                <li>Quantidade: 
-                    <select name="quantidade" id="">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </li>
-                <li><h3>R$220,00</h3></li>
-                <li>Até x2 no cartão sem juros</li>
-                <li><button>Entre em contato</button></li>
+                    <li><div><h2>Tênis Nike Air Max Excee - Preto</h2></div></li>
+                    <li><p>Super confortável e especial para você!!</p></li>
+                    <li>Marca: Nike</li>                
+                    <li>Tamanho: <button>37 ao 40</button> <button>40 ao 44</button></li>
+                    <li>Variante: <button>Preto, Branco e Vermelho</button></li>
+                    <li>Quantidade: 
+                        <select name="quantidade" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li><h3>R$220,00</h3></li>
+                    <li>Até x2 no cartão sem juros</li>
+                    <li>
+                        <form action="../contato.php" method="get">
+
+                            <button type="submit">Entre em contato</button>
+                        </form> 
+                    </li>
                 </ul>
             </section>
-
-        </main>
-            
+        </main>            
 <br>
         <footer class="fixar">
             <ul>               

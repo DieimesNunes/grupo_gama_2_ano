@@ -1,3 +1,10 @@
+<?php
+    if(!isset($_SESSION)){
+        session_start();
+    }
+    session_unset();
+    $_SESSION['id'] = "12";    
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -23,23 +30,28 @@
                     <img src="../fotos/sandalianike.png" alt="Produto Panda">
                 </div>
                 <ul>
-                <li><div><h2>Sandália Nike Infantil- Confortavel </h2></div></li>
-                <li><p>Sandália confortável.</p></li>
-                <li>Marca: Nike</li>               
-                <li>Tamanho: <button>19 ao 24</button> <button>25 ao 31</button></li>
-                <li>Variante: <button>Preto e Branco</button></li>
-                <li>Quantidade: 
-                    <select name="quantidade" id="">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </li>
-                <li><h3>R$129.90</h3></li>
-                <li>Até x2 no cartão sem juros</li>
-                <li><button>Entre em contato</button></li>
+                    <li><div><h2>Sandália Nike Infantil- Confortavel </h2></div></li>
+                    <li><p>Sandália confortável.</p></li>
+                    <li>Marca: Nike</li>               
+                    <li>Tamanho: <button>19 ao 24</button> <button>25 ao 31</button></li>
+                    <li>Variante: <button>Preto e Branco</button></li>
+                    <li>Quantidade: 
+                        <select name="quantidade" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li><h3>R$129.90</h3></li>
+                    <li>Até x2 no cartão sem juros</li>
+                    <li>
+                        <form action="../contato.php" method="get">
+
+                            <button type="submit">Entre em contato</button>
+                        </form> 
+                    </li>
                 </ul>
             </section>
 

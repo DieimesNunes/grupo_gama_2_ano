@@ -1,3 +1,10 @@
+<?php
+    if(!isset($_SESSION)){
+        session_start();
+    }
+    session_unset();
+    $_SESSION['id'] = "17";    
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,35 +24,37 @@
     <body>
         <?php include ("menu.php");?>   
         <main>
-            <section class="produto">
-                
+            <section class="produto">                
                 <div>
                     <img src="../fotos/tenisrosa.png" alt="Produto Listrada Zebra">
                 </div>
                 <ul>
-                <li><div><h2>Tênis tricae menina corações rosa</h2></div></li>
-                <li><p>Tênis femenino com corações super chiques.</p></li>
-                <li>Marca: Moleca</li>                
-                    <li>Tamanho: <button>23 ao 28</button> <button>29 ao 33</button></li>
-                    <li>Variante: <button>Única</button></li>
-                <li>Quantidade: 
-                    <select name="quantidade" id="">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </li>
-                <li><h3>R$59,99</h3></li>
-                <li>Até x2 no cartão sem juros</li>
-                <li><button>Entre em contato</button></li>
+                    <li><div><h2>Tênis tricae menina corações rosa</h2></div></li>
+                    <li><p>Tênis femenino com corações super chiques.</p></li>
+                    <li>Marca: Moleca</li>                
+                        <li>Tamanho: <button>23 ao 28</button> <button>29 ao 33</button></li>
+                        <li>Variante: <button>Única</button></li>
+                    <li>Quantidade: 
+                        <select name="quantidade" id="">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </li>
+                    <li><h3>R$59,99</h3></li>
+                    <li>Até x2 no cartão sem juros</li>
+                    <li>
+                        <form action="../contato.php" method="get">
+
+                            <button type="submit">Entre em contato</button>
+                        </form> 
+                    </li>
                 </ul>
             </section>
-
-        </main>
-            
-<br>
+        </main>            
+        <br>
         <footer class="fixar">
             <ul>               
                 <li> <a href="institucional.php"> Quem somos </a></li>

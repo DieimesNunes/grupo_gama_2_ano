@@ -1,3 +1,10 @@
+<?php
+    if(!isset($_SESSION)){
+        session_start();
+    }
+    session_unset();
+    $_SESSION['id'] = "23";    
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,8 +24,7 @@
     <body>
         <?php include ("menu.php");?>   
         <main>
-            <section class="produto">
-                
+            <section class="produto">                
                 <div>
                     <img src="../fotos/brancoair.png" alt="Produto Listrada Zebra">
                 </div>
@@ -39,13 +45,16 @@
                     </li>
                     <li><h3>R$700,00</h3></li>
                     <li>Até x3 no cartão sem juros</li>
-                    <li><button>Entre em contato</button></li>
+                    <li>
+                        <form action="../contato.php" method="get">
+
+                            <button type="submit">Entre em contato</button>
+                        </form> 
+                    </li>
                 </ul>
             </section>
-
-        </main>
-            
-<br>
+        </main>            
+        <br>
         <footer class="fixar">
             <ul>               
                 <li> <a href="institucional.php"> Quem somos </a></li>
