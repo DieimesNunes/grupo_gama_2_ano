@@ -71,7 +71,7 @@
                     }
                 ?>
                 <input class="btn btn-primary" type="submit" value="Enviar">
-                <input class="btn btn-danger"type="reset" value="Cancelar">
+                <a href="index.php" class="btn btn-danger">Voltar</a>
             </form>
         </div>
     </body>
