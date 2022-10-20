@@ -4,10 +4,13 @@
         session_start();
     }
     
+    
     if(isset($_GET['id'])){
         $id_pedido = $_GET['id'];
     }
 
+   
+    
     $selecionar_pedido = "SELECT * FROM pedido WHERE id_pedido = $id_pedido ";
     $retorno_consulta = $mysqli->query( $selecionar_pedido) or die($mysqli->error);
     $pedido = $retorno_consulta -> fetch_assoc();
@@ -32,12 +35,14 @@
         $deu_certo = $mysqli->query($sql_code) or die($mysqli->error);
 
         if($deu_certo) {
-            echo "<div class='alert alert-success'>Arquivo enviado. Deu certo aluno! :)</div>";            
-            unset($_POST);
-            unset($status);
+            $selecionar_pedido = "SELECT * FROM pedido WHERE id_pedido = $id_pedido ";
+            $retorno_consulta = $mysqli->query( $selecionar_pedido) or die($mysqli->error);
+            $pedido = $retorno_consulta -> fetch_assoc();
+            $_SESSION['resultado'] = "<div class='alert alert-success'>Pedido alterado </div>";
+            unset($_POST);            
         }
     }
-   var_dump ($pedido);
+   
 ?>
 
 <!DOCTYPE html>
@@ -78,11 +83,11 @@
                     <textarea class="form-control" rows="3"  placeholder="Digite o seu tamanho..." name="bt_pedido" required><?php echo $pedido['pedido']; ?></textarea>
                 </div> 
                 <?php
-                    if(isset($_SESSION['msg'])){
-                        echo $_SESSION['msg'];
+                    if(isset($_SESSION['resultado'])){
+                        echo $_SESSION['resultado'];
                         
                         
-                        unset($_SESSION['msg']);                   
+                        unset($_SESSION['resultado']);                   
                     }
                 ?>
                 <input class="btn btn-primary" type="submit" value="Alterar">

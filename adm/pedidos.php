@@ -20,6 +20,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <link rel="stylesheet" href="../femenino.css">
+        
         <title>Document</title>
     </head>
     <body>
@@ -33,14 +34,14 @@
                         <th>Nome</th>
                         <th>Email</th>
                         <th>Produto</th>                       
-                        <th>Pedido</th>
                         <th>Data</th>
+                        <th colspan="2">Ações</th>
                     </thead>
                     <tbody>
                         <?php
                             if ( $quantidade_pedidos == 0){ ?>
                             <tr>
-                                <td colspan="6"> Nenhuma mensagem foi cadastrada.</td>
+                                <td colspan="5"> Nenhuma mensagem foi cadastrada.</td>
                             </tr>
 
                         <?php   } else { 
