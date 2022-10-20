@@ -7,13 +7,14 @@
     
     if(isset($_GET['id'])){
         $id_pedido = $_GET['id'];
+        $selecionar_pedido = "SELECT * FROM pedido WHERE id_pedido = $id_pedido ";
+        $retorno_consulta = $mysqli->query( $selecionar_pedido) or die($mysqli->error);
+        $pedido = $retorno_consulta -> fetch_assoc();
     }
 
    
     
-    $selecionar_pedido = "SELECT * FROM pedido WHERE id_pedido = $id_pedido ";
-    $retorno_consulta = $mysqli->query( $selecionar_pedido) or die($mysqli->error);
-    $pedido = $retorno_consulta -> fetch_assoc();
+    
     
     if (isset($_POST['bt_nome'])){
 
@@ -84,9 +85,7 @@
                 </div> 
                 <?php
                     if(isset($_SESSION['resultado'])){
-                        echo $_SESSION['resultado'];
-                        
-                        
+                        echo $_SESSION['resultado']; 
                         unset($_SESSION['resultado']);                   
                     }
                 ?>
