@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 18-Out-2022 às 02:39
+-- Tempo de geração: 20-Out-2022 às 02:27
 -- Versão do servidor: 5.7.36
 -- versão do PHP: 7.4.26
 
@@ -35,7 +35,15 @@ CREATE TABLE IF NOT EXISTS `adm_login` (
   `nome` varchar(100) COLLATE utf8_bin NOT NULL,
   `senha` varchar(300) COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`id_login_adm`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Extraindo dados da tabela `adm_login`
+--
+
+INSERT INTO `adm_login` (`id_login_adm`, `nome`, `senha`) VALUES
+(1, 'dieimes', '1234'),
+(2, 'mudar', '$2y$10$7Mn6Ly0ZLaDZLxB9ixSd7ur/4mTkUOojxWzZ/y/aQC0/zvo1ViZmC');
 
 -- --------------------------------------------------------
 
@@ -59,10 +67,8 @@ CREATE TABLE IF NOT EXISTS `pedido` (
 --
 
 INSERT INTO `pedido` (`id_pedido`, `nome`, `email`, `produto`, `pedido`, `data`) VALUES
-(1, 'Teste1', 'teste1@teste1', 'TÃŠNIS NMD_R1', 'teste mais testee', '2022-10-16 18:24:19'),
-(2, 'Teste 2', 'teste2@teste2', 'TÃŠNIS NMD_R1', 'teste 2 ', '2022-10-16 18:33:08'),
+(2, 'Teste 21', 'teste2@teste2', 'TÃŠNIS NMD_R1', 'teste 2 ', '2022-10-16 18:33:08'),
 (3, 'teste3', 'teste3@teste3', 'TÃŠNIS FORUM BOLD', 'teste3', '2022-10-16 18:34:01'),
-(4, 'teste4', 'teste4', 'TÊNIS FORUM BOLD', 'teste4', '2022-10-16 18:35:49'),
 (5, 'teste 5', 'teste5@teste5', 'TÊNIS FORUM BOLD', 'teste5', '2022-10-16 18:51:18');
 
 -- --------------------------------------------------------
