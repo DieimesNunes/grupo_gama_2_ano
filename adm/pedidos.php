@@ -1,5 +1,6 @@
 <?php
-    include("conexao.php");
+    include ("conexao.php");
+    require ("../autenticacao.php");
 
     $selecionar_sql = "SELECT * FROM pedido";
 

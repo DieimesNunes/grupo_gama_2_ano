@@ -1,29 +1,23 @@
 <?php
-    include("conexao.php");
+    include ("conexao.php");
+    require ("../autenticacao.php");
     if(!isset($_SESSION)){
         session_start();
-    }
-    
+    }    
     
     if(isset($_GET['id'])){
         $id_pedido = $_GET['id'];
         $selecionar_pedido = "SELECT * FROM pedido WHERE id_pedido = $id_pedido ";
         $retorno_consulta = $mysqli->query( $selecionar_pedido) or die($mysqli->error);
         $pedido = $retorno_consulta -> fetch_assoc();
-    }
-
-   
-    
-    
+    }    
     
     if (isset($_POST['bt_nome'])){
 
         $nome = $_POST["bt_nome"];
         $email = $_POST["bt_email"];
         $produto = $_POST["bt_produto"];        
-        $pedido = $_POST["bt_pedido"];
-
-        
+        $pedido = $_POST["bt_pedido"];        
 
         
         $sql_code = "UPDATE pedido

@@ -1,5 +1,6 @@
 <?php
-    include("conexao.php");
+    include ("conexao.php");
+    require ("../autenticacao.php");
 
     if(isset($_GET['id'])){
         $id_pedido = $_GET['id'];

@@ -1,5 +1,5 @@
 <?php
-
+    
     $servidor="localhost";
     $usuario="gama2ano";
     $senha="2022";

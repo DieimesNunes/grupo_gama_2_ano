@@ -1,3 +1,8 @@
+<?php
+    include ("conexao.php");
+    require ("../autenticacao.php");
+?>
+
 <!DOCTYPE html>
     <html lang="pt-br">
     <head>
@@ -23,10 +28,14 @@
             <h4>Alterar Pedidos <a class="btn btn-warning" href="#" target="_blank">Acessar</a></h4>
             <hr>
             <h2>ADM - LOGIN</h2>
-            <h4>Cadastrar ADM - Login <a class="btn btn-warning" href="#" target="_blank">Acessar</a></h4>
+            <h4>Cadastrar ADM - Login <a class="btn btn-warning" href="cadastrar_login.php" target="_blank">Acessar</a></h4>
             <h4>Apagar ADM - Login <a class="btn btn-warning" href="#" target="_blank">Acessar</a></h4>
             <h4>Alterar ADM - Login <a class="btn btn-warning" href="#" target="_blank">Acessar</a></h4>
             <h4>Consultar ADM - Login <a class="btn btn-warning" href="#" target="_blank">Acessar</a></h4>
+        </div>
+        <div class="container text-center">
+            <a class="btn btn-danger" href="../sair.php">Sair do sistema</a>
+            
         </div>
     </body>
 </html>
