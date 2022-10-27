@@ -18,40 +18,12 @@
         <header>
 
             <div>
-                <a href="index.html"><img id="Logo" src="fotos/logoPI4.png" alt="meia inteira"></a>
+                <a href="index.php"><img id="Logo" src="fotos/logoPI4.png" alt="meia inteira"></a>
             </div>
-            <div>
-                <form action="">
-                    <input type="text" placeholder="Qual tipo de meia você gosta?">
-                    <button>Procurar</button>    
-                </form>
-            </div>
-            
-
+           
         </header>
 
-         <nav>
-            <ul>
-                <li>
-                     <a href="index.html">Início</a>
-                </li>
-                <li>
-                    <a href="catalogo.html">Todas as meias</a>
-                </li>
-                <li>
-                    <a href="basicas.html">Básicas</a>
-                </li>
-                <li>
-                    <a href="listradas.html">Listradas</a>
-                </li>
-                <li>
-                    <a href="bichinhos.html">Bichinhos</a>
-                </li>
-                <li>
-                    <a href="infantil.html">Infantil</a>
-                </li>
-             </ul>
-        </nav>
+        <?php include ("menu.php"); ?> 
             </div>
 
        <main>
@@ -64,7 +36,7 @@
                 Responsáveis pela criação deste site através de um projeto proposto aos alunos de TI(Técnico Informática) 2022.
                     </p>
                      <p>#Divulgação</p>
-                <img src="imagens/equipe.jfif" alt="Equipe">
+                <img src="fotos/grupoPI.png" alt="Equipe">
                 </div>
 
             </section>
@@ -73,7 +45,7 @@
         <footer>
         <ul>               
                 <li> <a href="institucional.php"> Quem somos </a></li>
-                <li> <a href="contatoPI.php"> Contato </a><li>
+               
               
             </ul>
         </footer>

@@ -88,7 +88,7 @@
         <footer class="fixar">
             <ul>               
                 <li> <a href="institucional.php"> Quem somos </a></li>
-                <li> <a href="contatoPI.php"> Contato </a><li>              
+                        
             </ul>
         </footer>
     </body>

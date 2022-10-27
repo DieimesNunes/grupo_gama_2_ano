@@ -45,7 +45,7 @@
                             <option value="5">5</option>
                         </select>
                     </li>
-                    <li><h3>R$900</h3></li>
+                    <li>R$900,00</li>
                     <li>Até x3 no cartão sem juros</li>
                     <li>
                         <form action="../contato.php" method="get">
@@ -58,9 +58,9 @@
         </main>            
 <br>
         <footer class="fixar">
-            <ul>               
-                <li> <a href="institucional.php"> Quem somos </a></li>
-                <li> <a href="contatoPI.php"> Contato </a><li>
+        <ul>               
+                <li> <a href="../institucional.php"> Quem somos </a></li>
+               
             </ul>
         </footer>
 
